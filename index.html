@@ -1,24 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Abinadi Garcia's Home Page</title>
+  <meta charset="UTF-8">
+  <title>Abinadi Garcia's Home Page</title>
+  <style>
+    /* Modern Embedded CSS */
+    :root {
+      --primary-color: #3a7bd5;       /* Blue gradient start */
+      --secondary-color: #00d2ff;     /* Blue gradient end */
+      --text-color: #333;
+      --light-bg: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--text-color);
+      line-height: 1.6;
+      background: linear-gradient(to right, #f5f7fa, #e4e8eb);
+    }
+    
+    h1 {
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-left: 5px solid var(--secondary-color);
+      padding-left: 15px;
+      margin: 1.5rem 0 1rem;
+    }
+    
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+      margin: 2rem 0;
+    }
+    
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary-color);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+    
+    a:hover {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .coming-soon {
+      font-style: italic;
+      color: #666;
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.03);
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
-<h1>Home Page for Abinadi</h1>
-<hr />
-<h2>Projects</h2>
-<hr />
-<h2>Practice Assignments</h2>
-<a href="/Spring2016/practice/HTML1/practice1.htm">Practice 1</a>
-&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="/Fall2015/practice/ExpWeb1/circle.html">Practice 2</a>
-
-<hr />
-<h2>Book Assignments</h2>
-
-
-
+  <h1>Abinadi Garcia's Home Page</h1>
+  <hr />
+  
+  <h2>Projects</h2>
+  <p class="coming-soon">Exciting projects coming soon!</p>
+  <hr />
+  
+  <h2>Practice Assignments</h2>
+  <div class="nav-links">
+    <a href="/Spring2016/practice/HTML1/practice1.htm">Practice 1</a>
+    <a href="/Fall2015/practice/ExpWeb1/circle.html">Practice 2</a>
+  </div>
+  <hr />
+  
+  <h2>Book Assignments</h2>
+  <p class="coming-soon">Book assignments will appear here</p>
 </body>
 </html>
